@@ -14,6 +14,13 @@ I got this output because without any arguments, `cd` goes back to the top of my
 This output is not an error, since the command had the expected output, which was to change the directory. <br/>
 <br/>
 2. "Share an example of using the command with a path to a *directory* as an argument." <br/>
-This text is here as a test and placeholder. <br/>
+```
+inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
+$ cd messages/
+
+inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1/messages (main)
+```
+I got this output because the relative path passed in as an argument was `./messages`, so `cd` used the given path to change the directory to `C:/Users/inclo/Documents/CSE15L/lecture1/messages`. <br/>
+This behavior is not a bug, as it successfully navigated to the directory provided by the path. <br/>
 3. "Share an example of using the command with a path to a *file* as an argument." <br/>
 This text is here as a test and placeholder. <br/>
