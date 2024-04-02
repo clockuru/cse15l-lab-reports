@@ -12,7 +12,8 @@ inclo@landons-laptop MINGW64 ~
 ```
 I got this output because without any arguments, `cd` goes back to the top of my User directory, at `C:/Users/inclo/`. <br/>
 This output is not an error, since the command had the expected output, which was to change the directory. <br/>
+---
 2. "Share an example of using the command with a path to a *directory* as an argument." <br/>
-This text is here as a test and placeholder.
+This text is here as a test and placeholder. <br/>
 3. "Share an example of using the command with a path to a *file* as an argument." <br/>
-This text is here as a test and placeholder.
+This text is here as a test and placeholder. <br/>
