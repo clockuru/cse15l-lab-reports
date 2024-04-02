@@ -2,7 +2,7 @@
 
 For **all 9 examples** below, the absolute path to the working directory is `C:/Users/inclo/Documents/CSE15L/lecture1`.
 
-# `cd`
+## `cd`
 1. "Share an example of using the command with *no* arguments." <br/>
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
@@ -34,4 +34,4 @@ inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
 I got this output because it is impossible to change directory to a text file, as `en-us.txt` does not have any other files inside of it. <br/>
 This behavior is an error, as the directory was not changed in the end, remaining in the working directory that had been provided at the start. <br/>
 
-# `ls`
+## `ls`
