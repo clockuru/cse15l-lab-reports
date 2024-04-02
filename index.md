@@ -6,6 +6,7 @@ There are *many* different ways to format text using **markdown**, such as...
 2. Italicizing text with `*_____*`
 3. Making a heading with either `# _____` or `## _____`
 4. And more!
+---
 There are still other ways to use markdown, including...
 - Embedding links with `[_____](<Insert website link here>)`
 - Embedding images with `![Image](<Insert image link here>)`
