@@ -37,10 +37,14 @@ This behavior is an error, as the directory was not changed in the end, remainin
 ## `ls`
 1. "Share an example of using the command with *no* arguments." <br/>
 ```
-<INSERT CODE HERE>
+inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
+$ ls
+Hello.class  Hello.java  messages/  README
+
+inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
 ```
-(A sentence or two explaining WHY you got the output) <br/>
-(Explicitly state whether or not the output is an error) <br/>
+Having no arguments meant that running `ls` would simply list the contents of the working directory, as reflected in the output. <br/>
+This behavior is not an error. <br/>
 <br/>
 2. "Share an example of using the command with a path to a *directory* as an argument." <br/>
 ```
