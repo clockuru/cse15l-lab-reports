@@ -35,3 +35,45 @@ I got this output because it is impossible to change directory to a text file, a
 This behavior is an error, as the directory was not changed in the end, remaining in the working directory that had been provided at the start. <br/>
 
 ## `ls`
+1. "Share an example of using the command with *no* arguments." <br/>
+```
+<INSERT CODE HERE>
+```
+(A sentence or two explaining WHY you got the output) <br/>
+(Explicitly state whether or not the output is an error) <br/>
+<br/>
+2. "Share an example of using the command with a path to a *directory* as an argument." <br/>
+```
+<INSERT CODE HERE>
+```
+(A sentence or two explaining WHY you got the output) <br/>
+(Explicitly state whether or not the output is an error) <br/>
+<br/>
+3. "Share an example of using the command with a path to a *file* as an argument." <br/>
+```
+<INSERT CODE HERE>
+```
+(A sentence or two explaining WHY you got the output) <br/>
+(Explicitly state whether or not the output is an error) <br/>
+
+## `cat`
+1. "Share an example of using the command with *no* arguments." <br/>
+```
+<INSERT CODE HERE>
+```
+(A sentence or two explaining WHY you got the output) <br/>
+(Explicitly state whether or not the output is an error) <br/>
+<br/>
+2. "Share an example of using the command with a path to a *directory* as an argument." <br/>
+```
+<INSERT CODE HERE>
+```
+(A sentence or two explaining WHY you got the output) <br/>
+(Explicitly state whether or not the output is an error) <br/>
+<br/>
+3. "Share an example of using the command with a path to a *file* as an argument." <br/>
+```
+<INSERT CODE HERE>
+```
+(A sentence or two explaining WHY you got the output) <br/>
+(Explicitly state whether or not the output is an error) <br/>
