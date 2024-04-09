@@ -5,10 +5,10 @@ For **all 9 examples** below, the absolute path to the working directory is `~/D
 ## `cd`
 1. "Share an example of using the command with *no* arguments." <br/>
 ```
-inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
-$ cd
-
-inclo@landons-laptop MINGW64 ~
+inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main) <br/>
+$ cd <br/>
+<br/>
+inclo@landons-laptop MINGW64 ~ <br/>
 ```
 I got this output because without any arguments, `cd` goes back to the top of my User directory, at `~`. <br/>
 This output is not an error since the command had the expected output, which was to change the directory. <br/>
