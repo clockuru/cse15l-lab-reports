@@ -18,7 +18,9 @@ class Handler implements URLHandler {
         }
         else if (url.getPath().equals("/add-message")) {
             String[] parameters = url.getQuery().split("&");
-            messageHistory = messageHistory + parameters[1].substring(parameters[1].indexOf("=") + 1) + ": " + parameters[0].substring(parameters[0].indexOf("=") + 1) + "\n";
+            String user = parameters[1].substring(parameters[1].indexOf("=") + 1);
+            String message = parameters[0].substring(parameters[0].indexOf("=") + 1);
+            messageHistory = messageHistory + user + ": " + message + "\n";
             return messageHistory;
         }
         return messageHistory;
@@ -51,3 +53,5 @@ class URIMain {
 }
 ```
 Screenshots: <br/>
+![Image](placeholder)<br/>
+![Image](placeholder)<br/>
