@@ -53,5 +53,5 @@ class URIMain {
 }
 ```
 Screenshots: <br/>
-![Image](placeholder)<br/>
-![Image](placeholder)<br/>
+[Screenshot1](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Screenshot1.png?raw=true)<br/>
+Screenshot2<br/>
