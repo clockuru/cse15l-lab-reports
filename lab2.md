@@ -53,7 +53,7 @@ class URIMain {
 }
 ```
 Screenshots: <br/>
-![Part1-Screenshot1](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part1-Screenshot1.png?raw=true)<br/>
+* ![Part1-Screenshot1](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part1-Screenshot1.png?raw=true)<br/>
 * **Which methods in your code are called?** The `handleRequest()` method is called because of the `/add-message` path in the URL.<br/>
 * **What are the relevant arguments to those methods, and the values of any relevant fields of the class?** The URL itself is an argument for the method, specifically the query following `/add-message`.
 Parameters from the query are temporarily stored in the `String[] parameters`, `String user`, and `String message` fields, before being used to update the value of the `String messageHistory` field, which is the
@@ -61,7 +61,7 @@ only field relevant to the class itself. In this case, the value of `parameters`
 * **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.** The value of the `String messageHistory` field is changed by adding a message
 from a specific user to the contents of the website. In this specific example, `messageHistory` is updated to be equal to `"jpolitz: Hello\n"`. The information used to update this value comes from the `user` and
 `message` fields within the method, which are `"jpolitz"` and `"Hello"` respectively.<br/>
-![Part1-Screenshot2](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part1-Screenshot2.png?raw=true)<br/>
+* ![Part1-Screenshot2](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part1-Screenshot2.png?raw=true)<br/>
 * **Which methods in your code are called?** The `handleRequest()` method is also called because of the `/add-message` path in the URL, just like the last screenshot.<br/>
 * **What are the relevant arguments to those methods, and the values of any relevant fields of the class?** The URL itself is an argument for the method, specifically the query following `/add-message`.
 Parameters from the query are temporarily stored in the `String[] parameters`, `String user`, and `String message` fields, before being used to update the value of the `String messageHistory` field, which is the
