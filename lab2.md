@@ -74,6 +74,6 @@ message from yash, as provided in the URL. `messageHistory` is updated to be equ
 value comes from the `user` and `message` fields within the method, which are `"yash"` and `"How are you"` respectively.<br/>
 ## Part 2 - SSH Keys
 Screenshots: <br/>
-Part2-Screenshot1<br/>
-Part2-Screenshot2<br/>
-Part2-Screenshot3<br/>
+![Part2-Screenshot1](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part2-Screenshot1.png?raw=true)<br/>
+![Part2-Screenshot2](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part2-Screenshot2.png?raw=true)<br/>
+![Part2-Screenshot3](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part2-Screenshot3.png?raw=true)<br/>
