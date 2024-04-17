@@ -77,3 +77,7 @@ Screenshots: <br/>
 ![Part2-Screenshot1](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part2-Screenshot1.png?raw=true)<br/>
 ![Part2-Screenshot2](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part2-Screenshot2.png?raw=true)<br/>
 ![Part2-Screenshot3](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab3-Part2-Screenshot3.png?raw=true)<br/>
+## Part 3 - Reflection
+Prior to week 2's lab, I wasn't aware that UCSD had servers that you could connect to through using ssh and that you could run bash commands on it, just as you would with your own computer. I also found it interesting how the ieng6 server was capable of
+hosting websites on it through java as well, and even allowing others to view and modify the website through queries in the URL bar and having those changes apply to everyone viewing it, as the localhost websites we worked with previously only worked on
+your own computer.
