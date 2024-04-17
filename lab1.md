@@ -1,9 +1,8 @@
 # This is Lab Report 1 - Remote Access and FileSystem (Week 1)
 
-For **all 9 examples** below, the absolute path to the working directory is `~/Documents/CSE15L/lecture1`.
-
 ## `cd`
 1 - "Share an example of using the command with *no* arguments." <br/>
+The absolute path for the working directory is `~/Documents/CSE15L/lecture1`. <br/>
 
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
@@ -12,10 +11,11 @@ $ cd
 inclo@landons-laptop MINGW64 ~
 ```
 
-I got this output because without any arguments, `cd` goes back to the top of my User directory, at `~`. <br/>
+I got this output because without any arguments, `cd` goes back to the top of my User or home directory, at `~`. <br/>
 This output is not an error since the command had the expected output, which was to change the directory. <br/>
 <br/>
 2 - "Share an example of using the command with a path to a *directory* as an argument." <br/>
+The absolute path for the working directory is `~/Documents/CSE15L/lecture1`. <br/>
 
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
@@ -28,6 +28,7 @@ I got this output because the relative path passed in as an argument was `./mess
 This behavior is not an error, as it successfully navigated to the directory provided by the path. <br/>
 <br/>
 3 - "Share an example of using the command with a path to a *file* as an argument." <br/>
+The absolute path for the working directory is `~/Documents/CSE15L/lecture1`. <br/>
 
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
@@ -42,6 +43,7 @@ This behavior is an error, as the directory was not changed in the end, remainin
 
 ## `ls`
 1 - "Share an example of using the command with *no* arguments." <br/>
+The absolute path for the working directory is `~/Documents/CSE15L/lecture1`. <br/>
 
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
@@ -55,6 +57,7 @@ Having no arguments meant that running `ls` would simply list the contents of th
 This behavior is not an error. <br/>
 <br/>
 2 - "Share an example of using the command with a path to a *directory* as an argument." <br/>
+The absolute path for the working directory is `~/Documents/CSE15L/lecture1`. <br/>
 
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
@@ -66,6 +69,7 @@ The command listed the contents of the folder `~/Documents/CSE15L`, as the relat
 This output is not an error, as it correctly listed all the contents of the given directory. <br/>
 <br/>
 3 - "Share an example of using the command with a path to a *file* as an argument." <br/>
+The absolute path for the working directory is `~/Documents/CSE15L/lecture1`. <br/>
 
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
@@ -78,6 +82,7 @@ This output is not an error, since the command produces an output that correspon
 
 ## `cat`
 1 - "Share an example of using the command with *no* arguments." <br/>
+The absolute path for the working directory is `~/Documents/CSE15L/lecture1`. <br/>
 
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
@@ -85,9 +90,10 @@ $ cat
 ```
 
 There was no further output from my terminal after running `cat` with no arguments, since the command requires two filepaths and it was run with none. <br/>
-This output is an error because it bricks my terminal and prevents me from running any other commands, requiring me to kill that terminal and make a new one. <br/>
+This output is not an error, as running `cat` without any arguments causes an infinite loop of reading and writing data in its standard input and output respectively, without returning any error. <br/>
 <br/>
 2 - "Share an example of using the command with a path to a *directory* as an argument." <br/>
+The absolute path for the working directory is `~/Documents/CSE15L/lecture1`. <br/>
 
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
@@ -100,6 +106,7 @@ I ran the command using two paths, just to show that the command supports multip
 This output is an error because it doesn't print the contents of anything, instead returning an error message to notify the user that they are using the command improperly. <br/>
 <br/>
 3 - "Share an example of using the command with a path to a *file* as an argument." <br/>
+The absolute path for the working directory is `~/Documents/CSE15L/lecture1`. <br/>
 
 ```
 inclo@landons-laptop MINGW64 ~/Documents/CSE15L/lecture1 (main)
