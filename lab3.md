@@ -20,4 +20,7 @@ public void testReverseInPlaceOneElem() {
   assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
-3. The symptom of the bug is that the program "mirrors" half of the array instead of properly reversing it
+3. The symptom of the bug is that the program "mirrors" half of the array instead of properly reversing it<br/>
+![Part1-Screenshot1](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab4-Part1-Screenshot1.png?raw=true)<br/>
+![Part1-Screenshot2](https://github.com/clockuru/cse15l-lab-reports/blob/main/lab4-Part1-Screenshot2.png?raw=true)<br/>
+4. 
