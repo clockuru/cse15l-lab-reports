@@ -43,7 +43,7 @@ static void reverseInPlace(int[] arr) {
 ```
 5. I made the program store the value of the element being reversed temporarily so that it'd be swapped simultaneously with the element on the opposite half of the array corresponding to its index. As a result, the method only needs to run on half of the array, as it would unreverse it while going through the second half.<br/>
 ## Part 2 - Researching Commands
-The command I have chosen is `grep`. I got all of my information from running `grep --help`, which outputs information on how to use the command, listing all of its patterns as well. Extra newline characters are removed in the output in some cases.<br/>
+The command I have chosen is `grep`. I got all of my information from running `grep --help`, which outputs information on how to use the command, listing all of its patterns as well. Extra newline characters are removed in the output in some cases, as to ensure the markdown formatting doesn't break.<br/>
 1. `grep -i, --ignore-case`<br/>
 Using the option `-i` causes `grep` to ignore the case of the pattern it is searching for. This can be useful when searching for a specific phrase in a text document that has a chance of appearing at the start of a sentence, since capitalization would alter the results without the `-i` in that case.<br/>
 Example 1: Multiple capitalizations<br/>
@@ -135,3 +135,147 @@ $ grep -vi "THE" ./technical/plos/journal.pbio.0020353.txt
         public access to research results seems methodical, inclusive, and likely to prove
 ```
 3. `grep -m, --max-count=NUM`<br/>
+Using the option `-m` limits the amount of lines that `grep` will output to the given number. This can be useful when reading from a large text file and outputting to the terminal rather than a file, as doing so without a cap on the amount of lines can make it difficult to read.<br/>
+Example 1: Lines that contain specifically "baseline", limited to 10<br/>
+```
+$ grep -wm 10 "baseline" ./technical/biomed/rr37.txt
+          initial data collection at baseline ( 
+          data set to 371 of the baseline cohort (55% of total
+          restricted baseline cohort). We restricted the data set
+          excluded 24 baseline subjects who were found to be
+          outside the study age range and 206 baseline subjects
+          the 371 baseline subjects, the present study excludes an
+          Demographic data for comparison of the baseline cohort
+          Compared with subjects who participated in both baseline
+          All demographic variables were based on baseline
+          the 12 months prior to baseline interview), or remote
+```
+Example 2: Lines that contain "base pair", limited to 15<br/>
+```
+$ grep -m 15 "base pair" ./technical/biomed/1471-2105-3-2.txt
+        the occurrence of G:C, A:U, or G:U base pairs that occur
+        etc. ) and base pairs that form
+        97-98% of the secondary and tertiary structure base pairs
+            earlier), searches for helices and base pairs that are
+            maintaining G:C, A:U, and G:U base pairs. As more
+            eliminating previously proposed base pairs that are not
+            new secondary and tertiary structure base pairs that do
+            secondary structure base pairs and a few of the
+            tertiary structure base pairs predicted with
+            23S rRNA base pairs predicted with covariation analysis
+            CRW Site. However, while nearly all of the base pairs
+            predict many of the tertiary base pairings in the
+            of the secondary structure base pairings.
+            Beyond the base pairs predicted with covariation
+            each base pair, as predicted by covariation analysis.
+```
+4. `grep -c, --count`<br/>
+Using the `-c` option makes `grep` output a count of the amount of lines that match the pattern per file, rather than outputing the lines themselves. This can be useful when recursively checking files to see if a given pattern is within them, as the terminal won't be flooded as heavily compared to outputing lines normally. It can also save time if the lines were being filtered with `grep`, just to be counted with `wc -l`.<br/>
+Example 1: Checking which files "base pair" appears in within `technical/biomed` with their line count, filtering out ones without the pattern<br/>
+```
+$ grep -rc "base pair" ./technical/biomed/ | grep -v ":0"
+./technical/biomed/1471-2091-3-4.txt:1
+./technical/biomed/1471-2105-2-8.txt:4
+./technical/biomed/1471-2105-2-9.txt:1
+./technical/biomed/1471-2105-3-18.txt:9
+./technical/biomed/1471-2105-3-2.txt:85
+./technical/biomed/1471-2105-3-24.txt:1
+./technical/biomed/1471-2105-4-27.txt:1
+./technical/biomed/1471-2121-1-2.txt:1
+./technical/biomed/1471-2121-3-10.txt:2
+./technical/biomed/1471-213X-1-4.txt:1
+./technical/biomed/1471-2156-2-17.txt:2
+./technical/biomed/1471-2156-2-3.txt:1
+./technical/biomed/1471-2156-2-7.txt:2
+./technical/biomed/1471-2156-3-16.txt:1
+./technical/biomed/1471-2156-3-4.txt:1
+./technical/biomed/1471-2164-2-1.txt:1
+./technical/biomed/1471-2164-2-4.txt:3
+./technical/biomed/1471-2164-2-7.txt:1
+./technical/biomed/1471-2164-3-13.txt:2
+./technical/biomed/1471-2164-3-31.txt:1
+./technical/biomed/1471-2164-3-35.txt:4
+./technical/biomed/1471-2164-3-6.txt:1
+./technical/biomed/1471-2164-3-7.txt:4
+./technical/biomed/1471-2164-4-14.txt:1
+./technical/biomed/1471-2164-4-16.txt:1
+./technical/biomed/1471-2164-4-2.txt:1
+./technical/biomed/1471-2164-4-21.txt:3
+./technical/biomed/1471-2164-4-25.txt:4
+./technical/biomed/1471-2180-1-12.txt:1
+./technical/biomed/1471-2180-1-31.txt:1
+./technical/biomed/1471-2180-1-34.txt:2
+./technical/biomed/1471-2180-2-13.txt:1
+./technical/biomed/1471-2180-2-38.txt:1
+./technical/biomed/1471-2180-3-13.txt:5
+./technical/biomed/1471-2180-3-15.txt:1
+./technical/biomed/1471-2199-2-12.txt:7
+./technical/biomed/1471-2199-2-5.txt:1
+./technical/biomed/1471-2199-3-17.txt:4
+./technical/biomed/1471-2202-2-12.txt:1
+./technical/biomed/1471-2202-3-16.txt:1
+./technical/biomed/1471-2202-3-7.txt:3
+./technical/biomed/1471-2210-2-14.txt:2
+./technical/biomed/1471-2229-2-3.txt:11
+./technical/biomed/1471-2334-3-12.txt:1
+./technical/biomed/1471-2350-2-2.txt:2
+./technical/biomed/1471-2350-2-8.txt:1
+./technical/biomed/1471-2377-3-4.txt:1
+./technical/biomed/1471-2458-3-5.txt:1
+./technical/biomed/1471-2474-2-1.txt:3
+./technical/biomed/1472-6750-1-13.txt:2
+./technical/biomed/1475-4924-1-5.txt:3
+./technical/biomed/1477-7827-1-23.txt:1
+./technical/biomed/ar297.txt:1
+./technical/biomed/ar409.txt:1
+./technical/biomed/ar774.txt:2
+./technical/biomed/bcr570.txt:1
+./technical/biomed/bcr571.txt:1
+./technical/biomed/bcr602.txt:1
+./technical/biomed/bcr631.txt:1
+./technical/biomed/gb-2000-1-1-research002.txt:1
+./technical/biomed/gb-2001-2-12-research0054.txt:1
+./technical/biomed/gb-2001-2-3-research0008.txt:2
+./technical/biomed/gb-2001-2-4-research0010.txt:1
+./technical/biomed/gb-2001-2-4-research0011.txt:1
+./technical/biomed/gb-2001-2-4-research0014.txt:1
+./technical/biomed/gb-2001-2-6-research0021.txt:2
+./technical/biomed/gb-2001-2-7-research0025.txt:3
+./technical/biomed/gb-2001-2-8-research0027.txt:1
+./technical/biomed/gb-2002-3-10-research0053.txt:2
+./technical/biomed/gb-2002-3-12-research0079.txt:2
+./technical/biomed/gb-2002-3-12-research0083.txt:1
+./technical/biomed/gb-2002-3-6-research0029.txt:1
+./technical/biomed/gb-2003-4-4-r24.txt:1
+./technical/biomed/rr196.txt:1
+```
+Example 2: Checking which files "plos" appears in more than once within `technical/plos`, case insensitive and line count included<br/>
+```
+$ grep -rci "plos" ./technical/plos/ | grep -v ":0" | grep -v ":1"
+./technical/plos/journal.pbio.0020053.txt:2
+./technical/plos/journal.pbio.0020105.txt:9
+./technical/plos/journal.pbio.0020133.txt:2
+./technical/plos/journal.pbio.0020145.txt:3
+./technical/plos/journal.pbio.0020148.txt:2
+./technical/plos/journal.pbio.0020156.txt:2
+./technical/plos/journal.pbio.0020206.txt:2
+./technical/plos/journal.pbio.0020228.txt:8
+./technical/plos/journal.pbio.0020348.txt:2
+./technical/plos/journal.pbio.0020353.txt:2
+./technical/plos/journal.pbio.0020401.txt:2
+./technical/plos/journal.pbio.0030076.txt:2
+./technical/plos/journal.pbio.0030094.txt:2
+./technical/plos/journal.pbio.0030129.txt:32
+./technical/plos/pmed.0010022.txt:7
+./technical/plos/pmed.0010046.txt:3
+./technical/plos/pmed.0010048.txt:2
+./technical/plos/pmed.0020088.txt:4
+./technical/plos/pmed.0020091.txt:2
+./technical/plos/pmed.0020099.txt:6
+./technical/plos/pmed.0020118.txt:3
+./technical/plos/pmed.0020158.txt:20
+./technical/plos/pmed.0020208.txt:4
+./technical/plos/pmed.0020272.txt:4
+./technical/plos/pmed.0020278.txt:4
+```
+<br/>
