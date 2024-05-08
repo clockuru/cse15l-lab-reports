@@ -41,4 +41,4 @@ static void reverseInPlace(int[] arr) {
   }
 }
 ```
-I made the program store the value of the element being reversed temporarily so that it'd be swapped simultaneously with the element on the opposite half of the array corresponding to its index. As a result, the method only needs to run on half of the array, as it would unreverse it while going through the second half.
+5. I made the program store the value of the element being reversed temporarily so that it'd be swapped simultaneously with the element on the opposite half of the array corresponding to its index. As a result, the method only needs to run on half of the array, as it would unreverse it while going through the second half.<br/>
