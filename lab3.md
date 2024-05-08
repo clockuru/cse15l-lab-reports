@@ -43,7 +43,7 @@ static void reverseInPlace(int[] arr) {
 ```
 5. I made the program store the value of the element being reversed temporarily so that it'd be swapped simultaneously with the element on the opposite half of the array corresponding to its index. As a result, the method only needs to run on half of the array, as it would unreverse it while going through the second half.<br/>
 ## Part 2 - Researching Commands
-The command I have chosen is `grep`. I got all of my information from running `grep --help`, which outputs information on how to use the command, listing all of its patterns as well.<br/>
+The command I have chosen is `grep`. I got all of my information from running `grep --help`, which outputs information on how to use the command, listing all of its patterns as well. Extra newline characters are removed in the output in some cases.<br/>
 1. `grep -i, --ignore-case`<br/>
 Using the option `-i` causes `grep` to ignore the case of the pattern it is searching for. This can be useful when searching for a specific phrase in a text document that has a chance of appearing at the start of a sentence, since capitalization would alter the results without the `-i` in that case.<br/>
 Example 1: Multiple capitalizations<br/>
@@ -69,9 +69,6 @@ Using the option `-v` causes grep to output all the lines that do **not** contai
 Example 1: Filtering out "the"<br/>
 ```
 $ grep -v the ./technical/911report/preface.txt
-
-
-
             PREFACE
                 Democrats chosen by elected leaders from our nation's capital at a time of great
                 avoid such tragedy again?
@@ -111,11 +108,6 @@ $ grep -v the ./technical/911report/preface.txt
 Example 2: Combining with `-i`, ignoring all cases of "the"<br/>
 ```
 $ grep -vi "THE" ./technical/plos/journal.pbio.0020353.txt
-
-
-
-
-
         fueled by a slew of congressional and parliamentary recommendations, claims of political
         victory by critics and proponents of open access, and redoubled lobbying efforts on every
         of public money invested in scientific research and its outputs is sufficient to merit
@@ -141,9 +133,5 @@ $ grep -vi "THE" ./technical/plos/journal.pbio.0020353.txt
         constituents: scientists, publishers, librarians, patient advocates, text-miners,
         of a seven-month investigation, featuring some 127 submissions of written evidence and four
         public access to research results seems methodical, inclusive, and likely to prove
-
-
-
-
 ```
 3. `grep -m, --max-count=NUM`<br/>
