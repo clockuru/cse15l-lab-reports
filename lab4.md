@@ -17,10 +17,10 @@
 2. `vim<space><shift + l>.<tab><enter>` , `44<shift + g>/1<enter>r2:wq`<br/>
 3. For my first set of keypresses, I used tabs once again in order to save keypresses on typing filenames, getting to `ListExamples.java` with the ones that I used, the file that needs to be corrected. As for my second set of keypresses, I use `44G` in order to skip to line 44, then `/1<enter>` to skip to the '1' in that line. Using `r2` replaces that '1' with a '2', then I quit and write my changes to the file with `:wq`.<br/>
 ## 8. Run the tests, demonstrating that they now succeed
-1. (screenshot)<br/>
-2. EXACTLY what keys I used for this step<br/>
-3. An explanation of the effect of these keypresses<br/>
+1. ![lab4-Step8](https://github.com/clockuru/cse15l-lab-reports/assets/146829235/0dc4c9b9-7770-476e-92dc-5c7a30e36539)<br/>
+2. `<up><up><enter>`<br/>
+3. I inputted `bash test.sh` from my command history by pressing `<up>` twice, then entered it in order to run the tests once more.<br/>
 ## 9. Commit and push the changes to your Github account (you can pick any commit message!)
-1. (screenshot)<br/>
-2. EXACTLY what keys I used for this step<br/>
-3. An explanation of the effect of these keypresses<br/>
+1. ![lab4-Step9](https://github.com/clockuru/cse15l-lab-reports/assets/146829235/a7dc2e40-2f9c-483c-823e-3f505d3f80ee)<br/>
+2. `git<space>add<space>.<enter>` , `git<space>commit<space>-m<space>"a"<enter>` , `git<space>push<enter>`<br/>
+3. I inputted all of the commands to add, commit, and push my changes to my Github account, as I do not think I have any shortcuts to use for this step in terms of typing the commands. The first set of keypresses adds all of the set of changes I'm pushing, with the second set adding a commit message. I simply chose "a" to be my commit message, as it requires just one keypress. Lastly, my third set of keypresses pushes all of the changes I made throughout these steps to my `lab7` repository on Github.<br/>
