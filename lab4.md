@@ -9,13 +9,13 @@
 2. `git<space>clone<space><ctrl + v><enter>`<br/>
 3. I typed out the majority of the `git clone` command myself, though I copy and pasted the `SSH` URL for my fork with `<ctrl + v>`, as it would be tedious and time-consuming to type it out normally.<br/>
 ## 6. Run the tests, demonstrating that they fail
-1. (screenshot)<br/>
+1. ![lab4-Step6](https://github.com/clockuru/cse15l-lab-reports/assets/146829235/428830b5-2935-4b01-819a-902b15583b87)<br/>
 2. `cd<space>l<tab><enter>` , `bash<space>t<tab><enter>`<br/>
 3. For my first set of keypresses, I changed directory into `lab7/` in order to prevent having to type out that directory for the rest of my commands. Additioanlly, I took advantage of `<tab>` by not having any other directories starting with 'L', meaning that I could directly enter the directory with just an 'L' and a `<tab>`. The same applies to the second set of keypresses, where `test.sh` is the only file starting with a 'T'. After typing out the filename, I ran `test.sh` in order to demonstrate that the tests fail.<br/>
 ## 7. Edit the code to fix the failing test
-1. (screenshot)<br/>
-2. EXACTLY what keys I used for this step<br/>
-3. An explanation of the effect of these keypresses<br/>
+1. ![lab4-Step7](https://github.com/clockuru/cse15l-lab-reports/assets/146829235/47307231-197c-4443-bd98-204f49ee9f60)<br/>
+2. `vim<space><shift + l>.<tab><enter>` , `44<shift + g>/1<enter>r2:wq`<br/>
+3. For my first set of keypresses, I used tabs once again in order to save keypresses on typing filenames, getting to `ListExamples.java` with the ones that I used, the file that needs to be corrected. As for my second set of keypresses, I use `44G` in order to skip to line 44, then `/1<enter>` to skip to the '1' in that line. Using `r2` replaces that '1' with a '2', then I quit and write my changes to the file with `:wq`.<br/>
 ## 8. Run the tests, demonstrating that they now succeed
 1. (screenshot)<br/>
 2. EXACTLY what keys I used for this step<br/>
